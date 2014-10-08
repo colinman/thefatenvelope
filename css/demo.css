@@ -16,7 +16,8 @@
 
 #top-nav, #custom-top-nav {
 	float: right;
-	width: 30%;
+	width: 41%;
+	margin-right:2%;
 }
 #top-nav ul, #custom-top-nav ul {
 	float: right;

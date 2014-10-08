@@ -1,0 +1,253 @@
+.fluidHeight {
+	width: 100%;
+	height: 452px;
+	padding: 0;
+	margin: 84px 0 0px 0;
+	position: relative;
+	font-family: 'Open Sans' !important;
+}
+
+.sliderContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.iosSlider {
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 452px;
+}
+
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider .item {
+	width: 100%;
+	height: 100%;
+	padding: 0px 0 0px 0;
+}
+
+.iosSlider .slider .item .inner {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 1170px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.iosSlider .slider .item1 .inner {
+	background-image: url(../../images/sliders/iosslider/slide1.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.iosSlider .slider .item2 .inner {
+	background-image: url(../../images/sliders/iosslider/slide2.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.iosSlider .slider .item3 .inner {
+	background-image: url(../../images/sliders/iosslider/slide3.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.iosSlider .slider .item4 .inner {
+	background-image: url(../../images/sliders/iosslider/slide4.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.sliderContainer .slideSelectors {
+	position: relative;
+	left: 0;
+	top: -502px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.sliderContainer .slideSelectors .item {
+	float: left;
+	width: 291px;
+	height: 50px;
+	background-color: #3d4950;
+	margin: 0px 1px 0px 0px;
+	padding: 0px;
+}
+.sliderContainer .slideSelectors ul.iosslider-item-list {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	width: 291px;
+}
+.sliderContainer .slideSelectors .iosslider-item-list li {
+	margin: 0px;
+	list-style-type: none;
+	color: #fff;
+	font-size: 16px;
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+}
+.sliderContainer .slideSelectors ul.iosslider-item-list.last {
+	border-right: 0px solid #fff;
+}
+.sliderContainer .slideSelectors .selected {
+	background: #f68121;
+	color: #fff;
+}
+
+
+
+@media only screen and (min-width: 1170px){}
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+
+.iosSlider .slider .item .inner {
+	width: 1000px;
+	/*forourslidesonly*/
+	height: 386px;
+}
+
+.sliderContainer .slideSelectors .item {
+	width: 248px;
+}
+.sliderContainer .slideSelectors ul.iosslider-item-list {
+	width: 248px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+.fluidHeight {
+	width: 100%;
+	height: 352px;
+}
+
+.iosSlider {
+	height: 352px;
+}
+
+.iosSlider .slider .item .inner {
+	width: 767px;
+}
+
+.sliderContainer .slideSelectors .item {
+	width: 189px;
+}
+.sliderContainer .slideSelectors ul.iosslider-item-list {
+	width: 189px;
+}
+
+.sliderContainer .slideSelectors {
+	position: relative;
+	left: 0;
+	top: -400px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto 0 auto;
+	z-index: 1;
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+.fluidHeight {
+	width: 100%;
+	height: 220px;
+}
+
+.iosSlider {
+	height: 220px;
+}
+
+.iosSlider .slider .item .inner {
+	width: 479px;
+}
+
+.sliderContainer .slideSelectors .item {
+	width: 118px;
+}
+
+.sliderContainer .slideSelectors ul.iosslider-item-list {
+	width: 118px;
+}
+
+.sliderContainer .slideSelectors .iosslider-item-list li {
+	font-size: 10px;
+}
+
+.sliderContainer .slideSelectors {
+	position: relative;
+	left: 0;
+	top: -270px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto 0 auto;
+	z-index: 1;
+}
+
+
+}
+
+
+@media only screen and (max-width: 479px){
+
+.fluidHeight {
+	width: 100%;
+	height: 160px;
+}
+
+.iosSlider {
+	height: 160px;
+}
+
+.iosSlider .slider .item .inner {
+	width: 319px;
+}
+
+.sliderContainer .slideSelectors .item {
+	width: 78px;
+}
+
+.sliderContainer .slideSelectors ul.iosslider-item-list {
+	width: 78px;
+}
+
+.sliderContainer .slideSelectors .iosslider-item-list li {
+	font-size: 11px;
+	line-height: 16px;
+	padding-top: 10px;
+}
+
+.sliderContainer .slideSelectors {
+	position: relative;
+	left: 0;
+	top: -200px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto 0 auto;
+	z-index: 1;
+}
+
+}

@@ -2,6 +2,108 @@
 /*	GENERAL
 /*------------------------------------------------------*/
 
+.full_height {
+	height:1300px;
+	height:100vh;
+	min-height:450px;
+	display:block;
+}
+
+.slider_bg {
+	float: left;
+	height:100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #FFF;
+}
+
+.slider_area {
+	height:100%;
+	width:20%;
+	background-color:transparent;
+	position:absolute;
+	z-index:10;
+}
+
+.slider_arrow {
+	margin-top:70px;
+	height:50%;
+	width:70px; 
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	position:absolute; 
+	top:18%;
+	opacity:.2;
+}
+
+.slider_arrow#next {
+	background-image:url(../images/rightarrow.png);
+	margin-right:10px;
+}
+	
+.slider_arrow#prev {
+	background-image:url(../images/leftarrow.png);
+	margin-left:10px;
+}
+
+.intro_text {
+	float: right;
+	line-height:31px;
+	font-size:18px;
+	width: 400px;
+	height: 250px;
+	background-color:#FFF;
+	color:#333;
+	opacity: .95;
+	position:absolute;
+	right: 120px;
+	bottom: 50px;
+	padding: 10px 10px 10px 10px;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+.slider_arrow {
+	margin-top:113px;
+}
+
+.intro_text {
+	bottom: 20px;
+}
+
+.profilepics {
+	display: none;
+}
+
+}
+
+@media only screen and (max-width: 645px){
+
+.intro_text {
+	display: none;
+}
+
+.profilepics {
+	display: none;
+}
+	
+}
+
+@media only screen and (max-width: 479px){
+	
+.slider_arrow {
+	margin-top:113px;
+}
+
+.profilepics {
+	display: none;
+}
+
+}
+
 /* Logo */
 .logo {
 	float: left;
@@ -10,7 +112,8 @@
 	background: url(../images/logo.jpg) no-repeat left 20px;
 	z-index: 1001;
 	position: relative;
-	width: 70%;
+	width: 55%;
+	margin-left:2%;
 	height: 70px;
 }
 
@@ -234,7 +337,7 @@
 #services {
 	width: 100%;
 	float: left;
-	color: #fff;
+	/*color: #fff; */
 	background-color: #f68121;
 }
 .services_page {

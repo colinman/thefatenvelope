@@ -1,0 +1,105 @@
+a:hover, a:focus {
+	color: #b3d222;
+}
+
+.logo {
+	background: url(../../images/colors/lightgreen/logo.jpg) no-repeat left 20px;
+}
+
+#top-nav #fixed-nav li a:hover {
+	color: #b3d222;
+}
+
+#top-nav #fixed-nav li.current a {
+	color: #b3d222;
+}
+
+.tp-caption.big_white i{
+	color: #b3d222;
+}
+
+.slider_but_02 {
+	background-color: #b3d222;
+	border: 1px solid #b3d222;
+}
+
+h1 {
+	color: #b3d222;
+	background: url(../../images/colors/lightgreen/title-bg1.png) no-repeat center bottom;
+}
+
+h2 em {
+	color: #b3d222;
+}
+
+h3 em {
+	color: #b3d222;
+}
+
+.tibc_section .top i {
+	color: #b3d222;
+}
+
+.about_page .one_third:hover .tibc_section .top {
+	background-color: #b3d222;
+}
+
+.gray_bg .one_third:hover .left_icons {
+	background-color: #b3d222;
+}
+
+.site_statics li {
+	color: #b3d222;
+}
+
+.faide_slider #slider strong{
+	color: #b3d222;
+}
+
+#services {
+	background-color: #b3d222;
+}
+
+.sliderContainer .slideSelectors .selected {
+	background: #b3d222;
+}
+
+.why_weare .one_half_last li i {
+	color: #b3d222;
+}
+
+.packages_box ul {
+	border-bottom: 4px solid #b3d222;
+}
+
+.packages_box li.title {
+	background: #b3d222;
+}
+
+.packages_box li.arrow {
+	background: url(../../images/colors/lightgreen/arrow-down.png) no-repeat center bottom;
+}
+
+.twitter_feed {
+	background: #b3d222 url(../../images/colors/lightgreen/site-img6.jpg) no-repeat center bottom;
+}
+
+.contact_page {
+	border-top: 28px solid #b3d222;
+}
+
+.contact_form .contact_submit {
+	background-color: #b3d222;
+}
+
+a.button_01 {
+	background-color: #b3d222;
+}
+
+.why_us .acc-trigger a { background: url(../../images/colors/lightgreen/accordion-ico.png) no-repeat 20px 13px;}
+.why_us .acc-trigger a:hover { color: #b3d222; border-bottom: 1px solid #fff;  }
+.why_us .acc-trigger.active a { color: #b3d222; background-position: 20px -58px; cursor: default;	}
+.why_us .acc-trigger a { background: url(../../images/colors/lightgreen/accordion-ico.png) no-repeat 20px 13px;}
+.why_us .acc-trigger a:hover { color: #b3d222; border-bottom: 1px solid #fff;  }
+.why_us .acc-trigger.active a { color: #b3d222; background-position: 20px -58px; cursor: default;	}
+

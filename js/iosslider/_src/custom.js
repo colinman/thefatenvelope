@@ -2,14 +2,17 @@
 			$(document).ready(function() {
 				
 				$('.iosSlider').iosSlider({
-					desktopClickDrag: true,
+					desktopClickDrag: false,
 					snapToChildren: true,
-					navSlideSelector: '.sliderContainer .slideSelectors .item',
+					navPrevSelector: '.sliderContainer .slider_area .slider_arrow#prev',
+					navNextSelector: '.sliderContainer .slider_area .slider_arrow#next',
 					onSlideComplete: slideComplete,
 					onSliderLoaded: sliderLoaded,
 					onSlideChange: slideChange,
 					autoSlide: true,
-					scrollbar: true,
+					scrollbar: false,
+					keyboardControls: true,
+					infiniteSlider: true,
 					scrollbarContainer: '.sliderContainer .scrollbarContainer',
 					scrollbarMargin: '0',
 					scrollbarBorderRadius: '0'
@@ -19,13 +22,13 @@
 			
 			function slideChange(args) {
 						
-				$('.sliderContainer .slideSelectors .item').removeClass('selected');
-				$('.sliderContainer .slideSelectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+				//$('.sliderContainer .slideSelectors .item').removeClass('selected');
+				//$('.sliderContainer .slideSelectors .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
 			
 			}
 			
 			function slideComplete(args) {
-				
+				/*
 				if(!args.slideChanged) return false;
 				
 				$(args.sliderObject).find('.text1, .text2, .text3, .text4').attr('style', '');
@@ -49,11 +52,12 @@
 					left: '10px',
 					opacity: '1'
 				}, 400, 'easeOutQuint');
-				
+				*/
 			}
 			
 			function sliderLoaded(args) {
 					
+					/*
 				$(args.sliderObject).find('.text1, .text2, .text3, .text4').attr('style', '');
 				
 				$(args.currentSlideObject).find('.text1').animate({
@@ -76,6 +80,6 @@
 					opacity: '1'
 				}, 400, 'easeOutQuint');
 				
-				slideChange(args);
+				slideChange(args); */
 				
 			}

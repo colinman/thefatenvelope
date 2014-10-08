@@ -57,8 +57,10 @@ h3 em {
 	color: #f05b57;
 }
 
-#services {
+#team {
 	background-color: #f05b57;
+	width:100%;
+	float: left;
 }
 
 .sliderContainer .slideSelectors .selected {

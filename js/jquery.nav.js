@@ -13,6 +13,8 @@
  * });
  */
 
+var scrolling = false;
+
 ;(function($, window, document, undefined){
 
 	// our plugin constructor
@@ -21,7 +23,7 @@
 		this.$elem = $(elem);
 		this.options = options;
 		this.metadata = this.$elem.data('plugin-options');
-		this.$nav = this.$elem.find('a');
+		this.$nav = this.$elem.find('#fixed-nav a');
 		this.$win = $(window);
 		this.sections = {};
 		this.didScroll = false;
@@ -36,7 +38,7 @@
 			changeHash: false,
 			easing: 'swing',
 			filter: '',
-			scrollSpeed: 900,
+			scrollSpeed: 500,
 			scrollOffset: 0,
 			scrollThreshold: 0.1,
 			begin: false,
@@ -141,7 +143,11 @@
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
 			
-			if(!$parent.hasClass(self.config.currentClass)) {
+			if(!scrolling) {
+			//if(!$parent.hasClass(self.config.currentClass)) {
+				
+				scrolling = true;
+				
 				//Start callback
 				if(self.config.begin) {
 					self.config.begin();
@@ -161,7 +167,7 @@
 						top: -self.config.scrollOffset
 					},
 					onAfter: function() {
-						//Do we need to change the hash?
+						//Do we need to change t	he hash?
 						if(self.config.changeHash) {
 							window.location.hash = newLoc;
 						}
@@ -173,6 +179,8 @@
 						if(self.config.end) {
 							self.config.end();
 						}
+						
+						scrolling = false;
 					}
 				});
 			}
@@ -190,7 +198,7 @@
 				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
 				
 				//If it's not already the current section
-				if(!$parent.hasClass(this.config.currentClass)) {
+				//if(!$parent.hasClass(this.config.currentClass)) {
 					//Change the highlighted nav item
 					this.adjustNav(this, $parent);
 					
@@ -198,7 +206,7 @@
 					if(this.config.scrollChange) {
 						this.config.scrollChange($parent);
 					}
-				}
+				//}
 			}
 		},
 		
